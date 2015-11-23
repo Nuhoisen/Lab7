@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="cImageTextures" Collapsed="true">
+    <Position X="7.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAEAAAAAEAAAAAAAQAAAAAgEBAgAAAAQAA=</HashCode>
+      <FileName>cImageTextures.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cSurfMan" Collapsed="true">
+    <Position X="12.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BgAAEAAAAAAAAABAAAAAAAAQAAAECAAAAAAiAACAIAA=</HashCode>
+      <FileName>cSurfMan.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cSpriteTextures" Collapsed="true">
+    <Position X="10.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAABAACAAACAAAAAAAEAAAQCAAABAABAgAAgAAAA=</HashCode>
+      <FileName>cSpriteTextures.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cGameLoop" Collapsed="true">
+    <Position X="12.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEBAAABAAAAwAAAAERAAAAAAAAAggEABAAA=</HashCode>
+      <FileName>cGameLoop.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

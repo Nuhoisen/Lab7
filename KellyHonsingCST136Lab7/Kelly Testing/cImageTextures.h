@@ -60,6 +60,7 @@ class cImageTextures
 {
 public:
 	//CONSTRUCTORS
+	cImageTextures();
 	cImageTextures(SDL_Texture * tempTexture, SDL_Renderer * tempRenderer);	//constructor
 	cImageTextures(const cImageTextures & imgCpy);								//copy constructor
 	cImageTextures& operator=(cImageTextures & imgCPY);						//assignment operator

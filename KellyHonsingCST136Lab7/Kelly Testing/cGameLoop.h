@@ -51,7 +51,7 @@ Methods:
 #include <vector>
 #include "cSurfMan.h"
 #include "cImageTextures.h"
-#include "cCollisionObj.h"
+
 
 using std::cout;
 using std::cin;
@@ -68,7 +68,6 @@ public:
 	cGameLoop & operator=(cGameLoop &copy);	//Assignment Operator
 	//METHODS
 	void BeginGame();						//iniates game
-	void AutoGameLoop();					//loop renders collision objects and automatic scrolling images
 	void ControlledGameLoop();				//loop that the user controls
 	void Render( cImageTextures renderTxt1,  cImageTextures renderTxt2);
 	bool Retry();							//method that prompts the user to go again
@@ -77,7 +76,6 @@ private:
 	string * mFiles;							//string the command line args are copied into 
 	
 	cImageTextures * mImage[IMAGE_TOTAL];	//cImageTextures are used as an example of aggregation
-	cCollisionObj * mCollidingObj;			//cCollisionObj is used as an example of aggregation
 	int mIndex;								//index is used to keep track of controlled user loop 
 	
 

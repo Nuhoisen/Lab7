@@ -22,7 +22,13 @@ cImageTextures::cImageTextures(SDL_Texture * tempTexture, SDL_Renderer * tempRen
 	mImageRect -> w = RENDER_WIDTH;
 	mImageRect -> h = RENDER_HEIGHT;
 }
-
+cImageTextures::cImageTextures()
+{
+	mImageTexture = nullptr;
+	mImageRenderer = nullptr;
+	mImageRect = nullptr;
+	
+}
 /*
 ...................................................................
 cImageTextures(cImageTextures & imgCpy)
@@ -71,7 +77,6 @@ Exit: None
 ...................................................................*/
 cImageTextures::~cImageTextures()
 {
-	delete mImageTexture;
 	mImageTexture = nullptr;
 	SDL_DestroyTexture(mImageTexture);
 	mImageTexture = nullptr;

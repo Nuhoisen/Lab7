@@ -119,21 +119,18 @@ void cGameLoop::BeginGame()
 			}
 			else
 			{				
-				vector<cImageTextures> vecImages;
+				vector<cImageTextures> *vecImages= new vector<cImageTextures> ;
 				int imageIndex = 0;
 				for (int i = PATH_SECOND; i < (PATH_TOTAL); i++)
 				{					
 					mImage[imageIndex]=new cImageTextures(this->TextureGetter(i), this->RendererGetter());
-					vecImages.push_back(*mImage[imageIndex]);
+					vecImages->push_back(*mImage[imageIndex]);
 					imageIndex++;
 				}	
 //Block starts 
-				this->Render(vecImages.at(0), vecImages.at(1));							//here i call the vector full of  images
+				this->Render(vecImages->at(0), vecImages->at(1));				//ASK LONG WHY IT CALLS Copy C.
 				
 
-				mCollidingObj = new cCollisionObj(this->TextureGetter(0), this->RendererGetter());
-				
-				this->AutoGameLoop();
 
 				this->ControlledGameLoop();
 			}
@@ -143,8 +140,7 @@ void cGameLoop::BeginGame()
 				delete[] mImage[i];
 				mImage[i] = nullptr;
 			}			
-			delete mCollidingObj;
-			mCollidingObj = nullptr;			
+			
 		}
 	} while (this->Retry());
 }
@@ -179,17 +175,7 @@ Entry : None
 
 Exit : None
 ...................................................................*/
-void cGameLoop::AutoGameLoop()
-{
-	bool quit = false;
-	
-	mCollidingObj->Start(this->TextureGetter(1));
-	
-	for (int i = 0; i < IMAGE_FOURTH; i++)
-		{
-			mImage[i]->Render(mImage[i+1]);		//render sprites  
-		}
-}
+
 /*
 ...................................................................
 void ControlledGameLoop()

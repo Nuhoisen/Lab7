@@ -98,13 +98,14 @@ Exit: Returns the window member
 
 #include <iostream>
 #include <string>
+#include <vector>
 #include <SDL.h>
 #include <SDL_image.h>
 
 using std::cout;
 using std::cin;
 using std::string;
-
+using std::vector;
 const int WIDTH = 640;		//Renderer Width
 const int HEIGHT = 480;		//Renderer Height
 
@@ -140,5 +141,6 @@ private:
 	SDL_Window * mWindow;					//WINDOW
 	SDL_Renderer * mRenderer;				//RENDERER
 	SDL_Texture * mTexture[PATH_TOTAL];		//array of textures
+	vector <bool> checkList;
 };
 #endif 

@@ -123,14 +123,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="cCollisionObj.cpp" />
     <ClCompile Include="cImageTextures.cpp" />
     <ClCompile Include="cGameLoop.cpp" />
     <ClCompile Include="cSurfMan.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="cCollisionObj.h" />
     <ClInclude Include="cImageTextures.h" />
     <ClInclude Include="cGameLoop.h" />
     <ClInclude Include="cSurfMan.h" />
